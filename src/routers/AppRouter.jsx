@@ -4,11 +4,9 @@ import { theme } from "../style/theme";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
   Redirect,
 } from "react-router-dom";
 import AdopcionHome from "../container/AdopcionHome";
-import CategorieList from "../components/CategorieList"
 import AddPets from "../components/AddPets";
 import Navbar from "../components/Navbar";
 import { PrivateRouter } from "./PrivateRouter";

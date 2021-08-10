@@ -11,22 +11,24 @@ const Navbar = () => {
     return (
         <Breadcrumb separator="" >
             <BreadcrumbItem >
-                <BreadcrumbLink ><Link to="/">Home</Link></BreadcrumbLink>
+            <Link to="/">Home</Link>
+                {/* <BreadcrumbLink ></BreadcrumbLink> */}
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-                <BreadcrumbLink ><Link to="/pets">Pets</Link></BreadcrumbLink>
+                {/* <BreadcrumbLink ></BreadcrumbLink> */}
+                <Link to="/pets">Pets</Link>
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink ><Link to="/new">Agregar</Link></BreadcrumbLink>
+            <Link to="/new">Agregar</Link>
+                {/* <BreadcrumbLink ></BreadcrumbLink> */}
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink ><Link to="/auth/login">Login</Link></BreadcrumbLink>
+            <Link to="/auth/login">Login</Link>
+                {/* <BreadcrumbLink ></BreadcrumbLink> */}
             </BreadcrumbItem>
-
-           
         </Breadcrumb>
     )
 }

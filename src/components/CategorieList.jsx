@@ -19,7 +19,7 @@ const CategorieList = ({ tipo }) => {
     <Wrap spacing="40px" justify="center">
       {mascotas.map((mascota) => (
         <WrapItem key={mascota.id}>
-          <Link to="/">
+          <Link to="">
             <Box maxW="sm" rounded="lg" overflow="hidden">
               <Image
                 height={400}

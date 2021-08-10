@@ -1,4 +1,4 @@
-import { Button, Flex, FormControl, FormLabel, Heading, Input, Text, VStack } from '@chakra-ui/react'
+import { Button, Flex, FormControl, FormLabel, Heading, Input, VStack } from '@chakra-ui/react'
 import React from 'react'
 
 const Login = () => {
