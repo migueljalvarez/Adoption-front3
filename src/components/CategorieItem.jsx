@@ -9,15 +9,15 @@ import {
   Text
 } from "@chakra-ui/react"
 import CategorieList from './CategorieList'
+import axios from "axios";
 
 const CategorieItem = memo(() => {
   const [categories, setCategories] = useState([])
-  const [tipo, setTipo] = useState([])
+  const [tipo, setTipo] = useState("")
 
   const categoriesInfo = async () => {
-    const url = 'http://localhost:3004/categories'
-    const resp = await fetch(url)
-    const data = await resp.json()
+    const url = 'https://pets-api-fake.herokuapp.com/categories'
+    const { data } = await axios.get(url);
     return data;
   }
 
@@ -28,7 +28,6 @@ const CategorieItem = memo(() => {
 
   const handleList = (name) => {
     setTipo(name)
-    console.log(name)
   }
 
   return (
@@ -77,7 +76,6 @@ const CategorieItem = memo(() => {
           )
         })
       }
-
       <CategorieList tipo={tipo} />
     </Wrap>
   )

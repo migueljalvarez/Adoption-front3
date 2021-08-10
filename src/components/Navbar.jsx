@@ -23,7 +23,7 @@ const Navbar = () => {
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink ><Link to="/login">Login</Link></BreadcrumbLink>
+                <BreadcrumbLink ><Link to="/auth/login">Login</Link></BreadcrumbLink>
             </BreadcrumbItem>
 
            
